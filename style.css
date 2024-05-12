@@ -1,0 +1,16 @@
+body {
+  padding-top: 5rem;
+}
+.elemento {
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+
+.card-img-top {
+  object-fit: cover;
+  aspect-ratio: 1/1;
+}
+
+.logo{
+  width: 70px;
+}

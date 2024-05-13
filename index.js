@@ -1,3 +1,6 @@
+
+/* Url dell'API */
+
 const url = "https://striveschool-api.herokuapp.com/api/product/";
 
 window.onload = async () => {
@@ -7,8 +10,14 @@ window.onload = async () => {
         "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjNhMjk3NDBiM2IyNTAwMTUxYjU0M2UiLCJpYXQiOjE3MTUwODc3MzIsImV4cCI6MTcxNjI5NzMzMn0.4ac4HMa4KOLh2M12OHfFmh92wHk5z7Pd8yaCLJDHTs4",
     },
   });
+
+  /* recupero i dati dei prodotti */
+
   const products = await res.json();
   const row = document.querySelector("#products");
+
+  /* Itero su ogni elemento dell'Array */
+  
   products.forEach((prod) => {
     row.innerHTML += `
     <div class='col col-3 col-lg-3 col-md-4 col-sm-6 col-sm-12 mb-4'>  
